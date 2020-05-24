@@ -1,0 +1,327 @@
+openapi: 3.0.0
+info:
+  title: getDevelopers
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /getDevelopersList:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DevelopersListResponse'
+          headers:
+            allow:
+              schema:
+                type: string
+                title: The allow schema
+                default: ''
+            cf-cache-status:
+              schema:
+                type: string
+                title: The cf-cache-status schema
+                default: ''
+            cf-ray:
+              schema:
+                type: string
+                title: The cf-ray schema
+                default: ''
+            cf-request-id:
+              schema:
+                type: string
+                title: The cf-request-id schema
+                default: ''
+            content-language:
+              schema:
+                type: string
+                title: The content-language schema
+                default: ''
+            content-type:
+              schema:
+                type: string
+                title: The content-type schema
+                default: ''
+            date:
+              schema:
+                type: string
+                title: The date schema
+                default: ''
+            expect-ct:
+              schema:
+                type: string
+                title: The expect-ct schema
+                default: ''
+            path:
+              schema:
+                type: string
+                title: The path schema
+                default: ''
+            server:
+              schema:
+                type: string
+                title: The server schema
+                default: ''
+            set-cookie:
+              schema:
+                type: array
+                title: The set-cookie schema
+                default: []
+                items:
+                  type: string
+            strict-transport-security:
+              schema:
+                type: string
+                title: The strict-transport-security schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            vary:
+              schema:
+                type: string
+                title: The vary schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-cache-status:
+              schema:
+                type: string
+                title: The x-cache-status schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-frame-options:
+              schema:
+                type: string
+                title: The x-frame-options schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-rapidapi-region:
+              schema:
+                type: string
+                title: The x-rapidapi-region schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-rapidapi-version:
+              schema:
+                type: string
+                title: The x-rapidapi-version schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-server:
+              schema:
+                type: string
+                title: The x-server schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            content-length:
+              schema:
+                type: string
+                title: The content-length schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            connection:
+              schema:
+                type: string
+                title: The connection schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+      operationId: get-getDevelopersList
+      description: Get a list of game developers
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: X-RapidAPI-Host
+        - schema:
+            type: string
+          in: header
+          name: X-RapidAPI-Key
+  '/getDeveloper/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameDeveloper'
+          headers:
+            allow:
+              schema:
+                type: string
+                title: The allow schema
+                default: ''
+            cf-cache-status:
+              schema:
+                type: string
+                title: The cf-cache-status schema
+                default: ''
+            cf-ray:
+              schema:
+                type: string
+                title: The cf-ray schema
+                default: ''
+            cf-request-id:
+              schema:
+                type: string
+                title: The cf-request-id schema
+                default: ''
+            content-language:
+              schema:
+                type: string
+                title: The content-language schema
+                default: ''
+            content-type:
+              schema:
+                type: string
+                title: The content-type schema
+                default: ''
+            date:
+              schema:
+                type: string
+                title: The date schema
+                default: ''
+            expect-ct:
+              schema:
+                type: string
+                title: The expect-ct schema
+                default: ''
+            path:
+              schema:
+                type: string
+                title: The path schema
+                default: ''
+            server:
+              schema:
+                type: string
+                title: The server schema
+                default: ''
+            set-cookie:
+              schema:
+                type: array
+                title: The set-cookie schema
+                default: []
+                items:
+                  type: string
+            strict-transport-security:
+              schema:
+                type: string
+                title: The strict-transport-security schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            vary:
+              schema:
+                type: string
+                title: The vary schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-cache-status:
+              schema:
+                type: string
+                title: The x-cache-status schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-frame-options:
+              schema:
+                type: string
+                title: The x-frame-options schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-rapidapi-region:
+              schema:
+                type: string
+                title: The x-rapidapi-region schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-rapidapi-version:
+              schema:
+                type: string
+                title: The x-rapidapi-version schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            x-server:
+              schema:
+                type: string
+                title: The x-server schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            content-length:
+              schema:
+                type: string
+                title: The content-length schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+            connection:
+              schema:
+                type: string
+                title: The connection schema
+                description: An explanation about the purpose of this instance.
+                default: ''
+      operationId: get-getDeveloper-id
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: X-RapidAPI-Host
+        - schema:
+            type: string
+          in: header
+          name: X-RapidAPI-Key
+      description: Get a developer by Id
+components:
+  schemas:
+    GameDeveloper:
+      title: GameDeveloper
+      type: object
+      properties:
+        id:
+          type: number
+        name:
+          type: string
+        slug:
+          type: string
+        games_count:
+          type: number
+        image_background:
+          type: string
+        games:
+          type: array
+          items:
+            $ref: '#/components/schemas/Games'
+    Games:
+      title: Games
+      type: object
+      properties:
+        id:
+          type: number
+        slug:
+          type: string
+        name:
+          type: string
+        added:
+          type: number
+    DevelopersListResponse:
+      title: DevelopersListResponse
+      type: object
+      properties:
+        count:
+          type: number
+        next:
+          type: string
+        previous:
+          type: string
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/GameDeveloper'
